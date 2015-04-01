@@ -12,7 +12,7 @@ Usage
 The usage is simple. Just add a string to the set, and ask for it later
 by using ``.get``::
 
-   let set = new FuzzySet();
+   let exampleset = new FuzzySet();
    set.add("michael axiak");
    set.get("micael asiak");
    [[0.8461538461538461, 'michael axiak']];
@@ -28,9 +28,9 @@ Construction Arguments
  - gramSizeLower: The lower bound of gram sizes to use, inclusive (see Theory of operation). Default: 2
  - gramSizeUpper: The upper bound of gram sizes to use, inclusive (see Theory of operation). Default: 3
  
-Usage example (with the default values):
+Usage example (with the default values)::
 
-   let = new FuzzySet([], true, 2, 3);
+   let exampleset = new FuzzySet([], true, 2, 3);
 
 Methods
 -------
