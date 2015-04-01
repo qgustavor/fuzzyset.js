@@ -12,9 +12,9 @@ Usage
 The usage is simple. Just add a string to the set, and ask for it later
 by using ``.get``::
 
-   a = FuzzySet();
-   a.add("michael axiak");
-   a.get("micael asiak");
+   let set = new FuzzySet();
+   set.add("michael axiak");
+   set.get("micael asiak");
    [[0.8461538461538461, 'michael axiak']];
 
 The result will be an array of ``[score, matched_value]`` arrays.
@@ -27,6 +27,10 @@ Construction Arguments
  - useLevenshtein: Whether or not to use the levenshtein distance to determine the match scoring. Default: True
  - gramSizeLower: The lower bound of gram sizes to use, inclusive (see Theory of operation). Default: 2
  - gramSizeUpper: The upper bound of gram sizes to use, inclusive (see Theory of operation). Default: 3
+ 
+Usage example (with the default values):
+
+   let = new FuzzySet([], true, 2, 3);
 
 Methods
 -------
@@ -114,7 +118,7 @@ or::
 
     npm install fuzzyset.js
 
-
+Keep note that it requires a ES6 compatible environment to work.
 
 License
 -------
