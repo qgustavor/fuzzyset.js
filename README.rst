@@ -13,8 +13,8 @@ The usage is simple. Just add a string to the set, and ask for it later
 by using ``.get``::
 
    let exampleset = new FuzzySet();
-   set.add("michael axiak");
-   set.get("micael asiak");
+   exampleset.add("michael axiak");
+   exampleset.get("micael asiak");
    [[0.8461538461538461, 'michael axiak']];
 
 The result will be an array of ``[score, matched_value]`` arrays.
